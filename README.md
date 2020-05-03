@@ -1,7 +1,11 @@
 # Use Query Param
-![](https://res.cloudinary.com/shaolinmkz/image/upload/v1588509178/Random-Icons/react/react-icon.gif)
+
+[![CircleCI](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master.svg?style=svg)](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master)
 
 A React Hook that extracts query params from a URL query string and returns a queried object.
+
+<img width="30" height="30" src="https://res.cloudinary.com/shaolinmkz/image/upload/v1588509178/Random-Icons/react/react-icon.gif" />
+
 
 ### Installation
 

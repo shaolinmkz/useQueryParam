@@ -8,8 +8,8 @@
     "test": "jest --coverage",
     "build": "tsc -p ."
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["hooks", "react", "useQueryParam", "use query param", "use-query-param"],
+  "author": "Nwabuzor, Chukwuemeka Obiora",
   "license": "ISC",
   "devDependencies": {
     "jest": "^25.5.4",

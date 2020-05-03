@@ -1,0 +1,22 @@
+{
+  "name": "use-query-param",
+  "version": "1.0.0",
+  "description": "A React Hook that extracts query params from a URL query string and returns a queried object",
+  "main": "lib/index.js",
+  "types": "lib",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.5.4",
+    "typescript": "^3.8.3",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "babel-jest": "^25.5.1"
+  }
+}

@@ -1,4 +1,4 @@
-const useQueryParam = require('../src');
+import useQueryParam from '../src';
 
 describe('useQueryParam', () => {
     it('it should return an empty object', () => {

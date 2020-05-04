@@ -4,5 +4,6 @@
  * @param {string} queries - query string
  * @returns {object} - returns an object of query param properties
  */
-declare const useQueryParam: (queries?: string) => any;
+declare const useQueryParam: (queries?: string) => {};
+export default useQueryParam;
 //# sourceMappingURL=index.d.ts.map

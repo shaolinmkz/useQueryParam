@@ -4,7 +4,7 @@
  * @param {string} queries - query string
  * @returns {object} - returns an object of query param properties
  */
-const useQueryParam = (queries: string = window.location.search) => {
+const useQueryParam = (queries: string = window.location.search): {} => {
     try {
         const queryParams = new URLSearchParams(queries);
         const params: any = {};
@@ -17,4 +17,4 @@ const useQueryParam = (queries: string = window.location.search) => {
     }
   };
 
-  module.exports = useQueryParam
+export default useQueryParam;

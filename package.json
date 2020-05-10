@@ -19,5 +19,9 @@
     "@babel/preset-typescript": "^7.9.0",
     "babel-jest": "^25.5.1",
     "@types/jest": "^25.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaolinmkz/useQueryParam"
   }
 }

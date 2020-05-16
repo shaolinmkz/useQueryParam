@@ -1,6 +1,6 @@
 {
   "name": "use-query-param",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A React Hook that extracts query params from a URL query string and returns a queried object",
   "main": "lib/index.js",
   "types": "lib",
@@ -8,17 +8,27 @@
     "test": "jest --coverage",
     "build": "tsc -p ."
   },
-  "keywords": ["hooks", "react", "useQueryParam", "use query param", "use-query-param"],
+  "keywords": [
+    "hooks",
+    "react",
+    "useQueryParam",
+    "use query param",
+    "use-query-param"
+  ],
   "author": "Nwabuzor, Chukwuemeka Obiora",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^25.5.4",
-    "typescript": "^3.8.3",
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.2.1",
+    "@types/react": "^16.9.35",
+    "@types/react-router-dom": "^5.1.5",
     "babel-jest": "^25.5.1",
-    "@types/jest": "^25.2.1"
+    "jest": "^25.5.4",
+    "react": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "typescript": "^3.8.3"
   },
   "repository": {
     "type": "git",

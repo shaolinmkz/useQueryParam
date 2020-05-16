@@ -1,12 +1,10 @@
-/**
- * @function useQueryParam
- * @description extracts all query params from the URL
- * @param {string} queries - query string
- * @returns {object} - returns an object of query param properties
- */
-const useQueryParam = (queries: string = window.location.search): {} => {
+import { useEffect, useState } from 'react'; 
+import { useLocation } from 'react-router-dom'; 
+
+
+export const getQueryObject = (query = ''): {} => {
     try {
-        const queryParams = new URLSearchParams(queries);
+        const queryParams = new URLSearchParams(query);
         const params: any = {};
         queryParams.forEach((value: string, key: string) => { params[key] = value });
         return params;
@@ -17,4 +15,13 @@ const useQueryParam = (queries: string = window.location.search): {} => {
     }
   };
 
-export default useQueryParam;
+export default (queryStr: string = window.location.search) => {
+    const { search } = useLocation();
+    const [state, setState] = useState(getQueryObject(queryStr));
+
+    useEffect(() => {
+        setState(getQueryObject(search))
+    }, [search])
+
+    return state;
+};

@@ -1,14 +1,14 @@
-import { getQueryObject } from '../src';
+import { getQueryParams } from '..';
 
-describe('getQueryObject', () => {
+describe('getQueryParams', () => {
     it('it should return an empty object', () => {
-        const queryParams = getQueryObject();
+        const queryParams = getQueryParams();
         expect(queryParams).toEqual({});
     });
 
     it('it should mock the windows location and return mock params', () => {
         const queries = '?jest=true&typescript=true&hook=true&failed=false';
-        const queryParams = getQueryObject(queries);
+        const queryParams = getQueryParams(queries);
         expect(queryParams).toEqual({
             jest: 'true',
             typescript: 'true',

@@ -1,4 +1,5 @@
-export declare const getQueryObject: (query?: string) => {};
-declare const _default: (queryStr?: string) => {};
-export default _default;
+import { getQueryParams } from './helpers';
+declare const useQueryParam: (queryStr?: string) => {};
+export default useQueryParam;
+export { getQueryParams, useQueryParam, };
 //# sourceMappingURL=index.d.ts.map

@@ -1,27 +1,20 @@
 import { useEffect, useState } from 'react'; 
 import { useLocation } from 'react-router-dom'; 
+import { getQueryParams } from './helpers';
 
 
-export const getQueryObject = (query = ''): {} => {
-    try {
-        const queryParams = new URLSearchParams(query);
-        const params: any = {};
-        queryParams.forEach((value: string, key: string) => { params[key] = value });
-        return params;
-    } catch (error) {
-        return {
-            message: error.message
-        }
-    }
-  };
-
-export default (queryStr: string = window.location.search) => {
+const useQueryParam = (queryStr: string = window.location.search): {} => {
+    const [state, setState] = useState(getQueryParams(queryStr));
     const { search } = useLocation();
-    const [state, setState] = useState(getQueryObject(queryStr));
 
-    useEffect(() => {
-        setState(getQueryObject(search))
-    }, [search])
+    useEffect(() => setState(getQueryParams(search)), [search])
 
     return state;
 };
+
+export default useQueryParam;
+
+export {
+    getQueryParams,
+    useQueryParam,
+}

@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { getQueryParams } from './helpers';
 
 
-const useQueryParam = (queryStr: string = window.location.search): {} => {
+const useQueryParam = (queryStr: string = window?.location?.search || ''): {} => {
     const [state, setState] = useState(getQueryParams(queryStr));
     const { search } = useLocation();
 

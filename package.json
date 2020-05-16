@@ -1,6 +1,6 @@
 {
   "name": "use-query-param",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React Hook that extracts query params from a URL query string and returns a queried object",
   "main": "lib/index.js",
   "types": "lib",
@@ -27,8 +27,11 @@
     "babel-jest": "^25.5.1",
     "jest": "^25.5.4",
     "react": "^16.13.1",
-    "react-router-dom": "^5.2.0",
     "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "react-router-dom": ">=5.2.0",
+    "react": ">=16.0.0"
   },
   "repository": {
     "type": "git",

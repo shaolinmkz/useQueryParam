@@ -1,6 +1,6 @@
 {
   "name": "use-query-param",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A React Hook that extracts query params from a URL query string and returns a queried object",
   "main": "lib/index.js",
   "types": "lib",
@@ -10,9 +10,10 @@
   },
   "keywords": [
     "hooks",
-    "react",
-    "useQueryParam",
-    "use query param",
+    "React JS",
+    "useQueryParams",
+    "setQueryParams",
+    "use query params",
     "use-query-param"
   ],
   "author": "Nwabuzor, Chukwuemeka Obiora",
@@ -20,18 +21,23 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.10.1",
     "@babel/preset-typescript": "^7.9.0",
+    "@testing-library/react": "^10.2.1",
     "@types/jest": "^25.2.1",
     "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.5",
     "babel-jest": "^25.5.1",
     "jest": "^25.5.4",
     "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "5.2.0",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
-    "react-router-dom": ">=5.2.0",
-    "react": ">=16.0.0"
+    "react": "^16.8.x",
+    "react-router-dom": "^5.2.x"
   },
   "repository": {
     "type": "git",

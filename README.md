@@ -15,6 +15,8 @@ npm install use-query-param
 ```
 
 # Usage
+`import { useQueryParam, getQueryParams, setQueryParams } from 'use-query-param';`
+
 
 ## Case One:
 
@@ -33,12 +35,12 @@ Without an argument
 import { useEffect } from 'react'; 
 
 const Component = () => {
-  const queryParams = useQueryParam(); // <== Hook
+  const { queryParams } = useQueryParam(); // <== HOOK
 
   useEffect(() => {
       console.log(queryParams);
       // result will be an object of query params
-  }, [])
+  }, [queryParams])
 }
 ```
 
@@ -47,13 +49,13 @@ With an argument
 import { useEffect } from 'react'; 
 
 const Component = () => {
-    const queryString = '?typescript=true&hook=true'; // <== string format
-    const queryParams = useQueryParam(queryString); // <== Hook
+    const queryString = 'http://localhost?typescript=true&hook=true';
+    const  { queryParams } = useQueryParam(queryString);
 
   useEffect(() => {
       console.log(queryParams);
      // Output: { typescript: 'true', hook: 'true' }
-  }, []);
+  }, [queryParams]);
 }
 
 ```
@@ -61,6 +63,7 @@ const Component = () => {
 ## Case Two:
 
 ##### Importing module into file
+The getQueryParams takes a string and returns an object
 
 ```
 import { getQueryParams } from 'use-query-param';
@@ -72,7 +75,7 @@ const { getQueryParams } = require('use-query-param');
 
 Without an argument
 ```
-const queryParam = getQueryParams(); // <== This is not a hook
+const { queryParams } = getQueryParams(); // <== This is not a hook
 
 If a URL query string exist on the browser address bar you will get an output with all the query params OR an empty object
 // Output: { token: 'jdkjada9s7d9akadbjkss893asda89' }
@@ -85,10 +88,39 @@ OR
 With an argument
 ```
 const queryString = '?typescript=true&hook=true';
-const queryParam = getQueryParams(queryString); // <== This is not a hook
+const { queryParams } = getQueryParams(queryString); // <== This is not a hook
 
 // Output: { typescript: 'true', hook: 'true' }
 ```
 
+## Case Three:
+
+##### Importing module into file
+The setQueryParams takes an object and returns a query formatted string
+
+```
+import { setQueryParams } from 'use-query-param';
+
+OR
+
+const { setQueryParams } = require('use-query-param');
+```
+
+
+Without an argument
+```
+const { queryString } = setQueryParams(); // <== This is not a hook
+
+// Output: '?token='jdkjada9s7d9akad....'
+```
+
+With an argument
+```
+const queryObject = { typescript: 'true', hook: 'true' };
+const { queryString } = getQueryParams(queryString); // <== This is not a hook
+
+// '?typescript=true&hook=true'
+```
+
 ### Note
-`Note that the getQueryParams is not a hook, rather an auxiliary method, always use useQueryParam hook`
+Note that the getQueryParams and setQueryParams are not hooks, rather they are auxiliary functions

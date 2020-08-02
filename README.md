@@ -1,6 +1,6 @@
 # Use Query Param
 
-[![CircleCI](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master.svg?style=svg)](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master) [![Maintainability](https://api.codeclimate.com/v1/badges/9abdde7d752cab951b07/maintainability)](https://codeclimate.com/github/shaolinmkz/useQueryParam/maintainability)
+[![CircleCI](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master.svg?style=svg)](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master) [![Maintainability](https://api.codeclimate.com/v1/badges/f9bef3d76b74c6c503c0/maintainability)](https://codeclimate.com/github/shaolinmkz/useQueryParam/maintainability)
 
 
 A React Hook that extracts query params from a URL query string and returns a queried object.

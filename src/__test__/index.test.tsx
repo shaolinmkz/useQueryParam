@@ -18,7 +18,7 @@ const TestComponent = (props: PropsWithChildren<any>) => {
 
 describe('useQueryParam', () => {
 
-    it('should render the component', async () => {
+    it('should render the test component', async () => {
         const testComp = render(
             <Router>
                 <TestComponent url="http://localhost/?jest=true" />

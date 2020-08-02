@@ -6,7 +6,7 @@ interface queryPrms {
     queryParams?: {}
 }
 
-const useQueryParam = (queryStr: string = globalThis?.location?.search): queryPrms => {
+const useQueryParam = (queryStr: string = window?.location?.search): queryPrms => {
     const [{ queryParams }, setQueryParams] = useState(getQueryParams(queryStr));
  
     const { search } = useLocation();

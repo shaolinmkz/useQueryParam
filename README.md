@@ -1,6 +1,6 @@
 # Use Query Param
 
-[![CircleCI](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master.svg?style=svg)](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master) [![Maintainability](https://api.codeclimate.com/v1/badges/f9bef3d76b74c6c503c0/maintainability)](https://codeclimate.com/github/shaolinmkz/useQueryParam/maintainability)
+[![CircleCI](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master.svg?style=svg)](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master) [![Maintainability](https://api.codeclimate.com/v1/badges/f9bef3d76b74c6c503c0/maintainability)](https://codeclimate.com/github/shaolinmkz/useQueryParam/maintainability) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![NPM](https://img.shields.io/npm/v/use-query-param.svg)](https://www.npmjs.com/package/use-query-param)
 
 
 A React Hook that extracts query params from a URL query string and returns a queried object.
@@ -10,19 +10,21 @@ A React Hook that extracts query params from a URL query string and returns a qu
 
 # Installation
 
-```
+```bash
 npm install use-query-param
 ```
 
 # Usage
-`import { useQueryParam, getQueryParams, setQueryParams } from 'use-query-param';`
+```js
+import { useQueryParam, getQueryParams, setQueryParams } from 'use-query-param';
+```
 
 
 ## Case One:
 
 ##### Importing module into file
 
-```
+```js
 import { useQueryParam } from 'use-query-param';
 
 OR
@@ -31,7 +33,7 @@ const { useQueryParam } = require('use-query-param');
 ```
 
 Without an argument
-```
+```jsx
 import { useEffect } from 'react'; 
 
 const Component = () => {
@@ -45,7 +47,7 @@ const Component = () => {
 ```
 
 With an argument
-```
+```jsx
 import { useEffect } from 'react'; 
 
 const Component = () => {
@@ -65,7 +67,7 @@ const Component = () => {
 ##### Importing module into file
 The getQueryParams takes a string and returns an object
 
-```
+```js
 import { getQueryParams } from 'use-query-param';
 
 OR
@@ -74,7 +76,7 @@ const { getQueryParams } = require('use-query-param');
 ```
 
 Without an argument
-```
+```jsx
 const { queryParams } = getQueryParams(); // <== This is not a hook
 
 If a URL query string exist on the browser address bar you will get an output with all the query params OR an empty object
@@ -86,7 +88,7 @@ OR
 ```
 
 With an argument
-```
+```js
 const queryString = '?typescript=true&hook=true';
 const { queryParams } = getQueryParams(queryString); // <== This is not a hook
 
@@ -98,7 +100,7 @@ const { queryParams } = getQueryParams(queryString); // <== This is not a hook
 ##### Importing module into file
 The setQueryParams takes an object and returns a query formatted string
 
-```
+```js
 import { setQueryParams } from 'use-query-param';
 
 OR
@@ -108,14 +110,14 @@ const { setQueryParams } = require('use-query-param');
 
 
 Without an argument
-```
+```js
 const { queryString } = setQueryParams(); // <== This is not a hook
 
 // Output: '?token='jdkjada9s7d9akad....'
 ```
 
 With an argument
-```
+```js
 const queryObject = { typescript: 'true', hook: 'true' };
 const { queryString } = getQueryParams(queryString); // <== This is not a hook
 

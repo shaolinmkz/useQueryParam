@@ -1,6 +1,6 @@
 # Use Query Param
 
-[![CircleCI](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master.svg?style=svg)](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master) [![Maintainability](https://api.codeclimate.com/v1/badges/f9bef3d76b74c6c503c0/maintainability)](https://codeclimate.com/github/shaolinmkz/useQueryParam/maintainability) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![NPM](https://img.shields.io/npm/v/use-query-param.svg)](https://www.npmjs.com/package/use-query-param)
+[![CircleCI](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master.svg?style=svg)](https://circleci.com/gh/shaolinmkz/useQueryParam/tree/master) [![Maintainability](https://api.codeclimate.com/v1/badges/f9bef3d76b74c6c503c0/maintainability)](https://codeclimate.com/github/shaolinmkz/useQueryParam/maintainability) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![NPM](https://img.shields.io/npm/v/use-query-param.svg)](https://www.npmjs.com/package/use-query-param) [![Total Download](https://img.shields.io/npm/dt/use-query-param.svg)](https://www.npmjs.com/package/use-query-param)
 
 
 A React Hook that extracts query params from a URL query string and returns a queried object.

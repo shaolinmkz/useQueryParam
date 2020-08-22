@@ -1,6 +1,6 @@
 {
   "name": "use-query-param",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A React Hook that extracts query params from a URL query string and returns a queried object",
   "main": "lib/index.js",
   "types": "lib",
@@ -35,6 +35,9 @@
     "react-router-dom": "5.2.0",
     "typescript": "^3.8.3"
   },
+  "files": [
+    "lib"
+  ],
   "peerDependencies": {
     "react": "^16.8.x",
     "react-router-dom": "^5.2.x"
@@ -42,8 +45,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shaolinmkz/useQueryParam"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
